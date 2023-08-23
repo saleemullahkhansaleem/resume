@@ -33,14 +33,13 @@
 	font-weight: 400;
 }
 .social-icon{
+    color: white;
+	font-size: 25px;
+	margin-right: 17px;
 	float: left;
-	margin-right: 10px;
-	width: 50px;
-	height: 50px;
-	border-radius: 25px;
 }
 .social-icon:hover{
-	background-color: #53abff;
+    color: #53abff;
 }
 .heading{
 	color: #53abff;
@@ -116,12 +115,15 @@ p{
 	width: 75%;
 }
 #skill-6{
-	width: 70%;
+	width: 90%;
 }
 #skill-7{
-	width: 95%;
+	width: 70%;
 }
 #skill-8{
+	width: 95%;
+}
+#skill-9{
 	width: 80%;
 }
 .skill-btn{
