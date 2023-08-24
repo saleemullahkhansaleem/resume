@@ -59,6 +59,7 @@ p{
 }
 .bio tr td{
 	min-width: 115px;
+	padding: 5px;
 }
 .vline{
 	width: 0px;

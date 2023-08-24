@@ -11,7 +11,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
 		crossorigin="anonymous"></script>
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> -->
 	<script src="https://kit.fontawesome.com/8759d659c4.js" crossorigin="anonymous"></script>
 	<!-- colors= 
 	bg1: #344756
@@ -79,9 +78,18 @@
 						</div>
 						Bio Data
 					</h4>
-					<table id="bio" class="bio mt-3">
+					<table id="bio" class="bio m-auto">
 						<!-- Bio Data are goes here through Javascript -->
 					</table>
+				</div>
+				<div id="skillsBlock" class="mt-5">
+					<h4 class="heading">
+						<div class="icon">
+							<i class="fas fa-tools"></i>
+						</div>
+						 Skills
+					</h4>
+					<!-- Skills are goes here through Javascript -->
 				</div>
 				<div class="mt-5">
 					<h4 class="heading">
@@ -98,15 +106,6 @@
 						District: Mansehra</br>
 						KPK, Pakistan.
 					</p>
-				</div>
-				<div id="skillsBlock" class="mt-5">
-					<h4 class="heading">
-						<div class="icon">
-							<i class="fas fa-tools"></i>
-						</div>
-						 Skills
-					</h4>
-					<!-- Skills are goes here through Javascript -->
 				</div>
 			</div>
 			<div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
@@ -214,42 +213,52 @@
 		const skills = [
 			{
 				name:'HTML',
+				icon:'fa-brands fa-html5',
 				health: '95%'
 			},
 			{
 				name:'CSS',
+				icon:'fa-brands fa-css3-alt',
 				health: '90%'
 			},
 			{
 				name:'Bootstrap',
+				icon:'fa-brands fa-bootstrap',
 				health: '95%'
 			},
 			{
 				name:'Tailwind CSS',
+				icon:'fa-brands fa-envira',
 				health: '75%'
 			},
 			{
 				name:'Javascript',
+				icon:'fa-brands fa-square-js',
 				health: '85%'
 			},
 			{
 				name:'ReactJs',
+				icon:'fa-brands fa-react',
 				health: '90%'
 			},
 			{
 				name:'NextJs',
+				icon:'fa-solid fa-play fa-rotate-270',
 				health: '85%'
 			},
 			{
 				name:'WordPress',
+				icon:'fa-brands fa-wordpress',
 				health: '70%'
 			},
 			{
 				name:'Adobe Photoshop',
+				icon:'fa-solid fa-palette',
 				health: '65%'
 			},
 			{
 				name:'Adobe Illustrator',
+				icon:'fa-solid fa-bezier-curve',
 				health: '60%'
 			},
 		]
@@ -336,7 +345,7 @@
 			document.getElementById('bio').innerHTML += '<tr><td>'+item.name+':</td><td>'+item.value+'</td></tr>';
 		});
 		skills.map((item)=> {
-			document.getElementById('skillsBlock').innerHTML += '<p class="float-start clear-both" id="skillOneName">' + item.name + ':</p><p class="float-end">' + item.health + '</p><div class="skill clear-both"><div class="skill-val" style="width:' + item.health + '"><img src="icon/circle.png" alt="skill%" width="20px" class="skill-btn"></div></div>';
+			document.getElementById('skillsBlock').innerHTML += '<p class="float-start clear-both" id="skillOneName"><i class="'+item.icon+'"></i> ' + item.name + ':</p><p class="float-end">' + item.health + '</p><div class="skill clear-both"><div class="skill-val" style="width:' + item.health + '"><img src="icon/circle.png" alt="skill%" width="20px" class="skill-btn"></div></div>';
 		});
 		function showData(item, id){
 			document.getElementById(id).innerHTML += `<tr>
