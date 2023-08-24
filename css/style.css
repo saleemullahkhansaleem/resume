@@ -35,8 +35,6 @@
 .social-icon{
     color: white;
 	font-size: 25px;
-	margin-right: 17px;
-	float: left;
 }
 .social-icon:hover{
     color: #53abff;
@@ -78,11 +76,12 @@ p{
 	margin-left: 25px;
 }
 .circle{
-	margin-left: -32px;
+	margin-left: -24px;
 }
 .date{
 	font-size: 13px;
-	width: 160px;
+	min-width: 70px;
+	max-width: 120px;
 }
 .field-heading{
 	text-transform: uppercase;
