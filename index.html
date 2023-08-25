@@ -108,68 +108,8 @@
 					</p>
 				</div>
 			</div>
-			<div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
-				<!-- Experiences -->
-				<div class="mt-4">
-					<h4 class="heading">
-						<div class="icon"><i class="fas fa-briefcase"></i></div> Experience
-					</h4>
-					<div class="block-detail">
-						<div class="vline"></div>
-						<table id="experiencesBlock" class="mt-3 ms-3">
-						<!-- Experiences are goes here through Javascript -->
-						</table>
-					</div>
-				</div>
-				<!-- End fo Experiences -->
-				<!-- Education -->
-				<div class="mt-5">
-					<h4 class="heading">
-						<div class="icon">
-							<i class="fas fa-user-graduate"></i>
-						</div>
-						 Education
-					</h4>
-					<div class="block-detail">
-						<div class="vline"></div>
-						<table id="educationBlock" class="mt-3 ms-3">
-							<!-- Educations are goes here through Javascript -->
-						</table>
-					</div>
-				</div>
-				<!-- End of Education -->
-				<!-- Awards -->
-				<div class="mt-5">
-					<h4 class="heading">
-						<div class="icon">
-							<i class="fas fa-award"></i>
-						</div>
-						Awards
-					</h4>
-					<div class="block-detail">
-						<div class="vline"></div>
-						<table id="awardsBlock" class="mt-3 ms-3">
-							<!-- Awards are goes here through Javascript -->
-						</table>
-					</div>
-				</div>
-				<!-- End of Awards -->
-				<!-- Certificates -->
-				<div class="mt-5">
-					<h4 class="heading">
-						<div class="icon">
-							<i class="fas fa-certificate"></i>
-						</div>
-						Certificates
-					</h4>
-					<div class="block-detail">
-						<div class="vline"></div>
-						<table id="certificatesBlock" class="mt-3 ms-3">
-							<!-- Certificats are goes here through Javascript -->
-						</table>
-					</div>
-				</div>
-				<!-- End of Certificates -->
+			<div id="mainBlock" class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+				
 			</div>
 		</div>
 	</div>
@@ -347,30 +287,34 @@
 		skills.map((item)=> {
 			document.getElementById('skillsBlock').innerHTML += '<p class="float-start clear-both" id="skillOneName"><i class="'+item.icon+'"></i> ' + item.name + ':</p><p class="float-end">' + item.health + '</p><div class="skill clear-both"><div class="skill-val" style="width:' + item.health + '"><img src="icon/circle.png" alt="skill%" width="20px" class="skill-btn"></div></div>';
 		});
-		function showData(item, id){
-			document.getElementById(id).innerHTML += `<tr>
-				<td class="align-top py-3"><img src="icon/circle.png" width="12px" class="circle"></td>
-				<td class="date clr-2 align-top py-3"><span class="clr-3">From:</span> ${item.startDate} <br><span
-						class="clr-3">To:</span> ${item.endDate}</td>
-				<td class="p-3">
-					<div class="field-heading">${item.title}</div>
-					<span class="clr-2">ON</span> <span class="clr-3">${item.org}</span><br>
-					<p>${item.details}</p>
-				</td>
-			</tr>`;
+		
+		showData("Experience", 'fas fa-briefcase', experiences);
+		showData("Education", 'fas fa-user-graduate', education);
+		showData("Awards", 'fas fa-award', awards);
+		showData("Certificats", 'fas fa-certificate', certificates);
+		
+		function showData(heading, iconClass, arr){
+			document.getElementById("mainBlock").innerHTML += `<div class="mt-4">
+					<h4 class="heading">
+						<div class="icon"><i class="${iconClass}"></i></div> ${heading}
+					</h4>
+					<div class="block-detail">
+						<div class="vline"></div>
+						<table id="${heading}" class="mt-3 ms-3"></table>
+					</div>
+				</div>`	
+			arr.map((item)=> {
+				document.getElementById(heading).innerHTML += `<tr>
+					<td class="align-top py-3"><img src="icon/circle.png" width="12px" class="circle"></td>
+					<td class="date clr-2 align-top py-3"><span class="clr-3">From:</span> ${item.startDate} <br><span
+							class="clr-3">To:</span> ${item.endDate}</td>
+					<td class="p-3">
+						<div class="field-heading">${item.title}</div>
+						<span class="clr-2">ON</span> <span class="clr-3">${item.org}</span><br>
+						<p>${item.details}</p>
+					</td>
+				</tr>`;
+			});		
 		}
-		experiences.map((item)=> {
-			showData(item, "experiencesBlock");
-		});
-		education.map((item)=> {
-			showData(item, "educationBlock");
-		});
-		awards.map((item)=> {
-			showData(item, "awardsBlock");
-		});
-		certificates.map((item)=> {
-			showData(item, "certificatesBlock");
-		});
-
 	</script>
 </html>
