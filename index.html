@@ -1,310 +1,799 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<title>Resume</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-		crossorigin="anonymous"></script>
-	<script src="https://kit.fontawesome.com/8759d659c4.js" crossorigin="anonymous"></script>
-	<!-- colors= 
+  <head>
+    <title>Resume</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/8759d659c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- To use ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- colors= 
 	bg1: #344756
 	bg2: #223344
 	clr-1: #53abff
 	clr-2: #5dc9a5
 	clr-3: #d3d460
-	 -->
-</head>
+	 --></head>
 
-<body class="bg-color">
-	<div class="container text-light">
-		<div class="row">
-			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
-				<img src="img/profile.png" width="100%" class="profile">
-			</div>
-			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-5">
-				<h1 class="name text-center">Saleemullah Khan Saleem</h1>
-				<h5 class="text-uppercase clr-2 text-center">Web Developer and Reactjs expert</h5>
-				<h5 class="fw-normal mt-5"><i class="fa-brands fa-whatsapp mx-3"></i>+923405045889</h5>
-				<h5 class="fw-normal"><i class="fa-regular fa-envelope mx-3"></i>salikhanswati@gmail.com</h5>
-			</div>
-			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 mt-4 d-flex justify-content-around">
-				<a href="https://github.com/saleemullahkhansaleem">
-					<div class="social-icon"><i class="fa-brands fa-github"></div></i>
-				</a>
-				<a href="https://www.linkedin.com/in/mrsaleem/">
-					<div class="social-icon"><i class="fa-brands fa-linkedin"></div></i>
-				</a>
-				<a href="https://www.youtube.com/@saleemullahkhansaleem">
-					<div class="social-icon"><i class="fa-brands fa-youtube"></div></i>
-				</a>
-				<a href="https://web.facebook.com/saliyousafzai">
-					<div class="social-icon"><i class="fa-brands fa-facebook"></div></i>
-				</a>
-				<a href="https://twitter.com/khan_sali">
-					<div class="social-icon"><i class="fa-brands fa-x-twitter"></div></i>
-				</a>
-				<a href="https://www.instagram.com/saleemullahkhansaleem1/">
-					<div class="social-icon"><i class="fa-brands fa-instagram"></div></i>
-				</a>
-				<a href="https://www.tiktok.com/@saleemullahkhansaleem1">
-					<div class="social-icon"><i class="fa-brands fa-tiktok"></div></i>
-				</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
-				<div class="mt-4">
-					<h4 class="heading">
-						<div class="icon">
-							<i class="fa fa-user"></i>
-						</div>
-						Profile Statement
-					</h4>
-					<p>I am pleased to accept challenging assignments and will do my best to prove my self-equal to the
-						task may I request to consider me for the appointment May give you solemn assurance that I will
-						spare no pains in discharge of my duties in this respect with extreme devotions.</p>
-				</div>
-				<div class="mt-5">
-					<h4 class="heading">
-						<div class="icon">
-							<i class="fas fa-info-circle"></i>
-							<!-- <i class="fas fa-info"></i> -->
-						</div>
-						Bio Data
-					</h4>
-					<table id="bio" class="bio m-auto">
-						<!-- Bio Data are goes here through Javascript -->
-					</table>
-				</div>
-				<div id="skillsBlock" class="mt-5">
-					<h4 class="heading">
-						<div class="icon">
-							<i class="fas fa-tools"></i>
-						</div>
-						 Skills
-					</h4>
-					<!-- Skills are goes here through Javascript -->
-				</div>
-				<div class="mt-5">
-					<h4 class="heading">
-						<div class="icon">
-							<!-- <i class="fas fa-map-marker-alt"></i> -->
-							<i class="fas fa-address-book"></i>
-						</div>
-						Address
-					</h4>
-					<p class="text-center">
-						Mohallah: Khandhari</br>
-						Post Office: Shinkiari</br>
-						Postal Code: 21140</br>
-						District: Mansehra</br>
-						KPK, Pakistan.
-					</p>
-				</div>
-			</div>
-			<div id="mainBlock" class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
-				
-			</div>
-		</div>
-	</div>
-</body>
-	<script type="text/javascript">		
-		
-		const bioData = [
-			{
-				name: 'Father Name',
-				value: 'Fazlur Rahim'
-			},
-			{
-				name: 'Date of Birth',
-				value: '19-March-1993'
-			},
-			{
-				name: 'CNIC number',
-				value: '13503-8308170-3'
-			},
-			{
-				name: 'Domicile Distt',
-				value: 'Battagram (KPK)'
-			},
-			{
-				name: 'Religion',
-				value: 'Islam'
-			},
-			{
-				name: 'Nationality',
-				value: 'Pakistani'
-			},
-			{
-				name: 'Languages',
-				value: 'Pushto, Urdu & English'
-			},
-			{
-				name: 'Blod Group',
-				value: 'B Positive'
-			},
-		]
-		const skills = [
-			{
-				name:'HTML',
-				icon:'fa-brands fa-html5',
-				health: '95%'
-			},
-			{
-				name:'CSS',
-				icon:'fa-brands fa-css3-alt',
-				health: '90%'
-			},
-			{
-				name:'Bootstrap',
-				icon:'fa-brands fa-bootstrap',
-				health: '95%'
-			},
-			{
-				name:'Tailwind CSS',
-				icon:'fa-brands fa-envira',
-				health: '75%'
-			},
-			{
-				name:'Javascript',
-				icon:'fa-brands fa-square-js',
-				health: '85%'
-			},
-			{
-				name:'ReactJs',
-				icon:'fa-brands fa-react',
-				health: '90%'
-			},
-			{
-				name:'NextJs',
-				icon:'fa-solid fa-play fa-rotate-270',
-				health: '85%'
-			},
-			{
-				name:'WordPress',
-				icon:'fa-brands fa-wordpress',
-				health: '70%'
-			},
-			{
-				name:'Adobe Photoshop',
-				icon:'fa-solid fa-palette',
-				health: '65%'
-			},
-			{
-				name:'Adobe Illustrator',
-				icon:'fa-solid fa-bezier-curve',
-				health: '60%'
-			},
-		]
-		const experiences = [
-			{
-				title:'Web Developer and Graphics Designer',
-				org: 'Fiverr.com',
-				details: 'Complete projects with 100% positive review (rating). www.fiverr.com/saliyousafzai',
-				startDate: 'Dec 2014',
-				endDate: 'Continue...'
-			},
-			{
-				title:'Full stack Developer Training',
-				org: 'URRAAN - Runway To Digital Flight',
-				details: 'Complete Complete the Tasks in the following: HTML, CSS, Bootstrap, Javascript, jQuery, PHP, MySql and WordPress',
-				startDate: '01 May 2019',
-				endDate: '30 Jun 2019'
-			},
-		]
-		const education = [
-			{
-				title:'BCS Hons (Bachlor In Computer Science)',
-				org: 'Hazara University Mansehra Pakistan',
-				details: 'Major Subjects: Data Structure, Analysis of Algorithems,Theory of Automata, Database (DBMS) Relational Database (RDBMS), Operating System, ECommerece, Artificial Intelligence, Modren Programming Languages (MPL), Software Engineering, Graphics and Computer Networking, etc . . .',
-				startDate: 'Mar 2014',
-				endDate: 'Feb 2018'
-			},
-			{
-				title:'FSc (Computer Science)',
-				org: 'Tameer e Millat Hazara Public School & College Shinkiari Mansehra Pakistan',
-				details: 'Major Subjects: Computer Science, Mathematics and Physics.',
-				startDate: '2010',
-				endDate: '2012'
-			},
-			{
-				title:'SSC (Science)',
-				org: 'Govt High School Shinkiari Mansehra Pakistan',
-				details: 'Major Subjects: Biology, Chemistry, Mathematics and Physics.',
-				startDate: '2008',
-				endDate: '2010'
-			}
-		]
-		const awards = [
-			{
-				title:'Best Certificate Designer Award',
-				org: 'COMSATS University Abbottabad',
-				details: "In certificate designing competition of COMSATS IT Center's Wintercamp 2017 ",
-				startDate: '25 Feb 2017',
-				endDate: ''
-			},
-		]
-		const certificates = [
-			{
-				title:'COMSATS IT Center Wintercamp 2018',
-				org: 'COMSATS University Abbottabad Pakistan',
-				details: 'Complete the following cource in one weeks: YouTube SEO, WordPress Theme Customization, Linux (Instalation, Applications and Banefits), PMP(Project Management Professional) and Freelancing (Upwork, Freelancer, Peopleperhour and Fiverr)',
-				startDate: '12 Feb 2018',
-				endDate: '16 Feb 2018'
-			},
-			{
-				title:'MOS Certifide',
-				org: 'Microsoft',
-				details: 'Online Microsoft word test, Passed with 96.3% marks (963 out of 1000) AT Hazara University Mansehra Pakistan',
-				startDate: '31 Dec 2017',
-				endDate: ''
-			},
-			{
-				title:'COMSATS IT Center Wintercamp 2017',
-				org: 'COMSATS University Abbottabad Pakistan',
-				details: 'Complete the following cource in four weeks: HTML and CSS, PHP, ASP.NET, Graphics Designing, Android Application Development, Open Source Applications (WordPress, Joomla, Zencart e.t.c) and Freelancing (Upwork, Freelancer, Peopleperhour and Fiverr)',
-				startDate: '01 Feb 2017',
-				endDate: '25 Feb 2017'
-			},
-			{
-				title:'COMSATS IT Center Workshop 2016',
-				org: 'COMSATS University Abbottabad Pakistan',
-				details: 'Two days workshop on Freelancing (Upwork, Freelancer, Peopleperhour and Fiverr)',
-				startDate: '03 Dec 2016',
-				endDate: '04 Dec 2016'
-			},
-		]
+  <body class="bg-color">
+    <div class="container text-light">
+      <section id="home" class="row gx-5">
+        <div
+          class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 align-self-center"
+        >
+          <img
+            id="profile-img"
+            src="img/profile.png"
+            width="100%"
+            class="profile home-in"
+          />
+        </div>
+        <div
+          class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-7 pt-5 align-self-center"
+        >
+          <div>
+            <span class="heading"
+              ><ion-icon name="home-outline"></ion-icon> Introduce</span
+            >
+          </div>
+          <h1 class="main-heading home-in">
+            Hi From <br /><span class="name clr-2">
+              Saleemullah Khan Saleem,</span
+            ><br />
+            <span>A Web Developer and React.js expert!</span>
+          </h1>
+          <p class="slogn">
+            Web development is game for me, I play with hart. <br />
+            and Programming is my Love, when I start coding I don't care about a
+            thing <br />
+            Just simple like that!
+          </p>
+          <!-- <h5 class="fw-normal mt-5"><i class="fa-brands fa-whatsapp mx-3"></i>+923405045889</h5>
+				<h5 class="fw-normal"><i class="fa-regular fa-envelope mx-3"></i>salikhanswati@gmail.com</h5> -->
+          <div id="socialIcon" class="d-flex justify-content-around mt-5"></div>
+        </div>
+        <div
+          class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-1 align-self-center"
+        >
+          <header class="p-2">
+            <a href="#home" class="active"
+              ><span class="nav-icon"
+                ><ion-icon name="home-outline"></ion-icon></span
+              ><span class="text">Home</span></a
+            >
+            <a href="#about" class=""
+              ><span class="nav-icon"
+                ><ion-icon name="person-outline"></ion-icon></span
+              ><span class="text">About</span></a
+            >
+            <a href="#services" class=""
+              ><span class="nav-icon"
+                ><ion-icon name="apps-outline"></ion-icon></span
+              ><span class="text">Services</span></a
+            >
+            <a href="#skills" class=""
+              ><span class="nav-icon"
+                ><ion-icon name="options-outline"></ion-icon></span
+              ><span class="text">Skills</span></a
+            >
+            <a href="#projects" class=""
+              ><span class="nav-icon"
+                ><ion-icon name="grid-outline"></ion-icon></span
+              ><span class="text">Projects</span></a
+            >
+            <a href="#resume" class=""
+              ><span class="nav-icon"
+                ><ion-icon name="briefcase-outline"></ion-icon></span
+              ><span class="text">Resume</span></a
+            >
+            <a href="#contact" class=""
+              ><span class="nav-icon"
+                ><ion-icon name="mail-outline"></ion-icon></span
+              ><span class="text">Contact</span></a
+            >
+          </header>
+        </div>
+      </section>
+      <section id="about" class="row">
+        <div class="col-0 col-sm-0 col-md-0 col-lg-3 col-xl-3"></div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+          <div class="main-heading hide">
+            About <span class="clr-2">Saleem</span>
+          </div>
+          <div class="mt-5">
+            <span class="heading">
+              <!-- <i class="fas fa-map-marker-alt"></i> -->
+              <ion-icon name="person-outline"></ion-icon>
+              About
+            </span>
+            <div class="container3">
+              <div class="about-content">
+                <div class="intro">
+                  <p>
+                    Hey there! I'm <span class="name highlight">Saleem</span>, a
+                    passionate web developer specializing in
+                    <span class="highlight">React</span>. With a love for
+                    elegant code and interactive user experiences, I've been on
+                    a coding journey for years.
+                  </p>
+                  <p>
+                    My focus? Crafting dynamic interfaces using
+                    <span class="highlight">React's magic</span>. But it's not
+                    just about code to me. It's about fusing technology with
+                    <span class="highlight">user-centric design</span>.
+                  </p>
+                </div>
+                <h2>Approach</h2>
+                <div class="aboutBoxs hide">
+                  <div class="aboutBox">
+                    <div class="aboutIconBox">
+                      <ion-icon name="bulb-outline"></ion-icon>
+                    </div>
+                    <div class="aboutVLine"></div>
+                    <div class="aboutDetailBox">
+                      <h4>Innovation</h4>
+                      <p>
+                        I thrive on the latest trends and tech. This keeps me
+                        armed with innovative solutions that keep your project
+                        modern and engaging.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="aboutBox hide">
+                    <div class="aboutIconBox">
+                      <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                    <div class="aboutVLine"></div>
+                    <div class="aboutDetailBox">
+                      <h4>User-Centric</h4>
+                      <p>
+                        Interfaces should be intuitive and beautiful. I dig into
+                        user behavior insights to create seamless and visually
+                        pleasing designs.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="aboutBox hide">
+                    <div class="aboutIconBox">
+                      <ion-icon name="color-filter-outline"></ion-icon>
+                    </div>
+                    <div class="aboutVLine"></div>
+                    <div class="aboutDetailBox">
+                      <h4>Collaboration</h4>
+                      <p>
+                        Your input is golden. I see every project as a team
+                        effort, combining your vision with my skills for
+                        outstanding results.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="aboutBox hide">
+                    <div class="aboutIconBox">
+                      <ion-icon name="book-outline"></ion-icon>
+                    </div>
+                    <div class="aboutVLine"></div>
+                    <div class="aboutDetailBox">
+                      <h4>Learning</h4>
+                      <p>
+                        Tech evolves, and so do I. I'm committed to learning and
+                        adapting to deliver timeless solutions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Let's work together to turn your ideas into captivating
+                  digital experiences. Feel free to get in touch for anything
+                  from advice to full-on collaborations. <br /><br />
+                  <a href="#" class="btn-about">Get in Touch</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="row">
+        <div class="col-0 col-sm-0 col-md-0 col-lg-3 col-xl-3"></div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+          <div class="main-heading hide">
+            I can <span class="clr-2">Do</span>
+          </div>
+          <div class="mt-5">
+            <span class="heading">
+              <!-- <i class="fas fa-map-marker-alt"></i> -->
+              <ion-icon name="apps-outline"></ion-icon>
+              Services
+            </span>
+          </div>
+          <div class="contactContainer">
+            <div class="service hideLeft">
+              <h3>Custom Web Development</h3>
+              <p>Create fully customized websites tailored to your needs.</p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hidden">
+              <h3>Front-end Development</h3>
+              <p>Develop interactive and user-friendly front-end interfaces.</p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hideLeft">
+              <h3>React Application Development</h3>
+              <p>
+                Build modern and dynamic web applications using the React
+                library for efficient UI rendering.
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hidden">
+              <h3>Responsive Design</h3>
+              <p>
+                Ensure that websites and applications are optimized for various
+                screen sizes and devices.
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hideLeft">
+              <h3>UI/UX Design</h3>
+              <p>
+                Design intuitive and visually appealing user interfaces and user
+                experiences for better engagement.
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hidden">
+              <h3>Single-Page Applications (SPAs)</h3>
+              <p>
+                Develop single-page applications that provide a seamless
+                browsing experience by loading content dynamically.
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hideLeft">
+              <h3>Progressive Web Apps (PWAs)</h3>
+              <p>
+                Convert websites into PWAs, offering native app-like
+                experiences, offline access, and improved performance.
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hidden">
+              <h3>Web Performance Optimization</h3>
+              <p>
+                Improve website performance through techniques like
+                minification, compression, and lazy loading.
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hideLeft">
+              <h3>API Integration</h3>
+              <p>
+                Integrate third-party APIs to extend functionality and offer
+                features such as payment gateways, social media integration, and
+                more.
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hidden">
+              <h3>E-commerce Solutions</h3>
+              <p>
+                Build online stores with secure payment gateways, product
+                catalogs, shopping carts, and inventory management.
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hideLeft">
+              <h3>Content Management Systems (CMS)</h3>
+              <p>
+                Develop custom CMS solutions using platforms like WordPress,
+                Drupal, or headless CMS architectures.
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hidden">
+              <h3>Web Accessibility (a11y)</h3>
+              <p>
+                Ensure that your websites are accessible to users with
+                disabilities, following accessibility guidelines.
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hideLeft">
+              <h3>Cross-Browser Compatibility</h3>
+              <p>
+                Test and ensure that websites work seamlessly across different
+                web browsers.
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hidden">
+              <h3>Website Maintenance</h3>
+              <p>
+                Offer ongoing maintenance and updates to keep websites secure,
+                functional, and up-to-date.
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hideLeft">
+              <h3>Code Review and Refactoring</h3>
+              <p>
+                Review existing codebases, identify areas for improvement, and
+                refactor to enhance performance and maintainability.
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hidden">
+              <h3>Technical Consulting</h3>
+              <p>
+                Provide expert advice on technology choices, best practices, and
+                solutions for specific technical challenges.
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hideLeft">
+              <h3>Training and Workshops</h3>
+              <p>
+                Conduct training sessions or workshops to educate clients or
+                their teams on web development or React.
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hidden">
+              <h3>Version Control and Deployment</h3>
+              <p>
+                Set up version control (e.g., Git) and implement deployment
+                strategies for continuous integration and deployment (CI/CD).
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hideLeft">
+              <h3>Custom Web Components</h3>
+              <p>
+                Develop reusable and customizable web components for consistent
+                design and functionality.
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <div class="service hidden">
+              <h3>Integration with Backend Services</h3>
+              <p>
+                Collaborate with backend developers to integrate front-end
+                interfaces with server-side services and databases.
+              </p>
+              <a href="#" class="btn-services">Learn More</a>
+            </div>
+            <!-- Add more services here -->
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="row">
+        <div class="col-0 col-sm-0 col-md-0 col-lg-3 col-xl-3">
+          <div id="profile" class="pro-main pro-hide">
+            <div class="pro-pic">
+              <img src="img/profile.png" width="100%" class="" />
+            </div>
+            <div class="title">
+              <span class="pro-name clr-2">Saleem,</span> <br />
+              A Web Developer
+            </div>
+            <div class="mail">salikhanswati@gmail.com</div>
+            <div class="pro-icons">
+              <a href="#" class="pro-icon">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+              <a href="#" class="pro-icon">
+                <ion-icon name="logo-skype"></ion-icon>
+              </a>
+              <a href="#" class="pro-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </div>
+            <div class="hire-btn">
+              <a href="http://fiverr.com/saliyousafzai" target="_blank"
+                >Hire me</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+          <div class="main-heading hide">
+            My <span class="clr-2">Wealth</span>
+          </div>
+          <div id="" class="">
+            <span class="heading"
+              ><ion-icon name="options-outline"></ion-icon> Skills</span
+            >
+            <div id="skillsBlock" class="skill-progress-boxs"></div>
+            <!-- Skills are goes here through Javascript -->
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="row">
+        <div class="col-0 col-sm-0 col-md-0 col-lg-3 col-xl-3"></div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+          <div class="main-heading hide">
+            Some Featured <span class="clr-2">Projects</span>
+          </div>
+          <div class="">
+            <span class="heading"
+              ><ion-icon name="grid-outline"></ion-icon> Projects</span
+            >
+            <div class="project full-width hide">
+              <img src="./img/project3.jpg" alt="Project 1" />
+              <div class="project-details">
+                <h3>Jadeed Libas website</h3>
+                <p>An E-commerce web app.</p>
+                <a href="#" class="projects-btn">View Project</a>
+              </div>
+            </div>
+            <div class="project-container">
+              <div class="project project-parallel hideLeft">
+                <img src="./img/project2.jpg" alt="Project 2" />
+                <div class="project-details">
+                  <h3>Saleem Portfolio Theme</h3>
+                  <p>The theme of this website.</p>
+                  <a href="#" class="projects-btn">View Project</a>
+                </div>
+              </div>
+              <div class="project project-parallel hidden">
+                <img src="./img/project1.jpg" alt="Project 3" />
+                <div class="project-details">
+                  <h3>MrSleem web app</h3>
+                  <p>A multi functional web app</p>
+                  <a href="#" class="projects-btn">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="resume" class="row">
+        <div class="col-0 col-sm-0 col-md-0 col-lg-3 col-xl-3"></div>
+        <div
+          id="mainBlock"
+          class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9"
+        >
+          <div class="main-heading hide">
+            Education and <span class="clr-2">Experience</span>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="row">
+        <div class="col-0 col-sm-0 col-md-0 col-lg-3 col-xl-3"></div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+          <div class="main-heading hide">
+            Let's talk <span class="clr-2">Together!</span>
+          </div>
+          <div class="mt-5">
+            <span class="heading">
+              <!-- <i class="fas fa-map-marker-alt"></i> -->
+              <i class="fas fa-address-book"></i>
+              Contact
+            </span>
+            <!-- contact form -->
 
-		bioData.map((item)=> {
-			document.getElementById('bio').innerHTML += '<tr><td>'+item.name+':</td><td>'+item.value+'</td></tr>';
-		});
-		skills.map((item)=> {
-			document.getElementById('skillsBlock').innerHTML += '<p class="float-start clear-both" id="skillOneName"><i class="'+item.icon+'"></i> ' + item.name + ':</p><p class="float-end">' + item.health + '</p><div class="skill clear-both"><div class="skill-val" style="width:' + item.health + '"><img src="icon/circle.png" alt="skill%" width="20px" class="skill-btn"></div></div>';
-		});
-		
-		showData("Experience", 'fas fa-briefcase', experiences);
-		showData("Education", 'fas fa-user-graduate', education);
-		showData("Awards", 'fas fa-award', awards);
-		showData("Certificats", 'fas fa-certificate', certificates);
-		
-		function showData(heading, iconClass, arr){
-			document.getElementById("mainBlock").innerHTML += `<div class="mt-4">
-					<h4 class="heading">
-						<div class="icon"><i class="${iconClass}"></i></div> ${heading}
-					</h4>
+            <div class="container1">
+              <div class="content">
+                <div class="left-side">
+                  <div class="address details hidden">
+                    <ion-icon name="location-outline"></ion-icon>
+                    <div class="topic">Address</div>
+                    <div class="text-one">Shinkiari, P.O #21140</div>
+                    <div class="text-two">Mansehra, Pakistan</div>
+                  </div>
+                  <div class="phone details hidden">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">+92340 5045 889</div>
+                  </div>
+                  <div class="email details hidden">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <div class="topic">Email</div>
+                    <div class="text-one">salikhanswati@gmail.com</div>
+                  </div>
+                </div>
+                <div class="right-side">
+                  <form action="#">
+                    <div class="input-box">
+                      <input type="text" placeholder="Enter your name" />
+                    </div>
+                    <div class="input-box">
+                      <input type="text" placeholder="Enter your email" />
+                    </div>
+                    <div class="input-box message-box">
+                      <input type="textarea" placeholder="Enter your message" />
+                    </div>
+                    <div class="button hidden">
+                      <input type="button" value="Send Now" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <!-- contact form -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const bioData = [
+      {
+        name: "Father Name",
+        value: "Fazlur Rahim",
+      },
+      {
+        name: "Date of Birth",
+        value: "19-March-1993",
+      },
+      {
+        name: "CNIC number",
+        value: "13503-8308170-3",
+      },
+      {
+        name: "Domicile Distt",
+        value: "Battagram (KPK)",
+      },
+      {
+        name: "Religion",
+        value: "Islam",
+      },
+      {
+        name: "Nationality",
+        value: "Pakistani",
+      },
+      {
+        name: "Languages",
+        value: "Pushto, Urdu & English",
+      },
+      {
+        name: "Blod Group",
+        value: "B Positive",
+      },
+    ];
+    const skills = [
+      {
+        name: "HTML",
+        icon: "fa-brands fa-html5",
+        health: "95",
+      },
+      {
+        name: "CSS",
+        icon: "fa-brands fa-css3-alt",
+        health: "90",
+      },
+      {
+        name: "Bootstrap",
+        icon: "fa-brands fa-bootstrap",
+        health: "95",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: "fa-brands fa-envira",
+        health: "75",
+      },
+      {
+        name: "Javascript",
+        icon: "fa-brands fa-square-js",
+        health: "85",
+      },
+      {
+        name: "ReactJs",
+        icon: "fa-brands fa-react",
+        health: "90",
+      },
+      {
+        name: "NextJs",
+        icon: "fa-solid fa-play fa-rotate-270",
+        health: "85",
+      },
+      {
+        name: "WordPress",
+        icon: "fa-brands fa-wordpress",
+        health: "70",
+      },
+      {
+        name: "Adobe Photoshop",
+        icon: "fa-solid fa-palette",
+        health: "65",
+      },
+      {
+        name: "Adobe Illustrator",
+        icon: "fa-solid fa-bezier-curve",
+        health: "60",
+      },
+    ];
+    const experiences = [
+      {
+        title: "Web Developer and Graphics Designer",
+        org: "Fiverr.com",
+        details:
+          "Complete projects with 100% positive review (rating). www.fiverr.com/saliyousafzai",
+        startDate: "Dec 2014",
+        endDate: "Continue...",
+      },
+      {
+        title: "Full stack Developer Training",
+        org: "URRAAN - Runway To Digital Flight",
+        details:
+          "Complete Complete the Tasks in the following: HTML, CSS, Bootstrap, Javascript, jQuery, PHP, MySql and WordPress",
+        startDate: "01 May 2019",
+        endDate: "30 Jun 2019",
+      },
+    ];
+    const education = [
+      {
+        title: "BCS Hons (Bachlor In Computer Science)",
+        org: "Hazara University Mansehra Pakistan",
+        details:
+          "Major Subjects: Data Structure, Analysis of Algorithems,Theory of Automata, Database (DBMS) Relational Database (RDBMS), Operating System, ECommerece, Artificial Intelligence, Modren Programming Languages (MPL), Software Engineering, Graphics and Computer Networking, etc . . .",
+        startDate: "Mar 2014",
+        endDate: "Feb 2018",
+      },
+      {
+        title: "FSc (Computer Science)",
+        org: "Tameer e Millat Hazara Public School & College Shinkiari Mansehra Pakistan",
+        details: "Major Subjects: Computer Science, Mathematics and Physics.",
+        startDate: "2010",
+        endDate: "2012",
+      },
+      {
+        title: "SSC (Science)",
+        org: "Govt High School Shinkiari Mansehra Pakistan",
+        details: "Major Subjects: Biology, Chemistry, Mathematics and Physics.",
+        startDate: "2008",
+        endDate: "2010",
+      },
+    ];
+    const awards = [
+      {
+        title: "Best Certificate Designer Award",
+        org: "COMSATS University Abbottabad",
+        details:
+          "In certificate designing competition of COMSATS IT Center's Wintercamp 2017 ",
+        startDate: "25 Feb 2017",
+        endDate: "",
+      },
+    ];
+    const certificates = [
+      {
+        title: "COMSATS IT Center Wintercamp 2018",
+        org: "COMSATS University Abbottabad Pakistan",
+        details:
+          "Complete the following cource in one weeks: YouTube SEO, WordPress Theme Customization, Linux (Instalation, Applications and Banefits), PMP(Project Management Professional) and Freelancing (Upwork, Freelancer, Peopleperhour and Fiverr)",
+        startDate: "12 Feb 2018",
+        endDate: "16 Feb 2018",
+      },
+      {
+        title: "MOS Certifide",
+        org: "Microsoft",
+        details:
+          "Online Microsoft word test, Passed with 96.3% marks (963 out of 1000) AT Hazara University Mansehra Pakistan",
+        startDate: "31 Dec 2017",
+        endDate: "",
+      },
+      {
+        title: "COMSATS IT Center Wintercamp 2017",
+        org: "COMSATS University Abbottabad Pakistan",
+        details:
+          "Complete the following cource in four weeks: HTML and CSS, PHP, ASP.NET, Graphics Designing, Android Application Development, Open Source Applications (WordPress, Joomla, Zencart e.t.c) and Freelancing (Upwork, Freelancer, Peopleperhour and Fiverr)",
+        startDate: "01 Feb 2017",
+        endDate: "25 Feb 2017",
+      },
+      {
+        title: "COMSATS IT Center Workshop 2016",
+        org: "COMSATS University Abbottabad Pakistan",
+        details:
+          "Two days workshop on Freelancing (Upwork, Freelancer, Peopleperhour and Fiverr)",
+        startDate: "03 Dec 2016",
+        endDate: "04 Dec 2016",
+      },
+    ];
+    const socialLinks = [
+      {
+        name: "Github",
+        url: "https://github.com/saleemullahkhansaleem",
+        icon: "fa-brands fa-github",
+      },
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/mrsaleem/",
+        icon: "fa-brands fa-linkedin",
+      },
+      {
+        name: "Youtube",
+        url: "https://www.youtube.com/@saleemullahkhansaleem",
+        icon: "fa-brands fa-youtube",
+      },
+      {
+        name: "Facebook",
+        url: "https://web.facebook.com/saliyousafzai",
+        icon: "fa-brands fa-facebook",
+      },
+      {
+        name: "Twitter",
+        url: "https://twitter.com/khan_sali",
+        icon: "fa-brands fa-x-twitter",
+      },
+      {
+        name: "Instagram",
+        url: "https://www.instagram.com/saleemullahkhansaleem1/",
+        icon: "fa-brands fa-instagram",
+      },
+      {
+        name: "TikTok",
+        url: "https://www.tiktok.com/@saleemullahkhansaleem1",
+        icon: "fa-brands fa-tiktok",
+      },
+    ];
+    socialLinks.map((item) => {
+      document.getElementById(
+        "socialIcon"
+      ).innerHTML += `<a href="${item.url}"><div class="social-icon hidden"><i class="${item.icon}"></div></i></a>`;
+    });
+
+    // bioData.map((item)=> {
+    // 	document.getElementById('bio').innerHTML += `<tr><td>${item.name}:</td><td>${item.value}</td></tr>`;
+    // });
+    skills.map((item) => {
+      document.getElementById(
+        "skillsBlock"
+      ).innerHTML += `<div class="skill-progress-box hide">
+                <div class="skill-name-box">
+					<i class="${item.icon}"></i>
+                  <p>${item.name}</p>
+                </div>
+                <div class="skill-progress-bar" style="--val: ${item.health}">
+                  <small>%</small>
+                </div>
+              </div>`;
+    });
+
+    showData("Experience", "fas fa-briefcase", experiences);
+    showData("Education", "fas fa-user-graduate", education);
+    showData("Awards", "fas fa-award", awards);
+    showData("Certificats", "fas fa-certificate", certificates);
+
+    function showData(heading, iconClass, arr) {
+      document.getElementById("mainBlock").innerHTML += `<div class="mt-4">
+					<div class="mt-5">
+						<span class="heading"><i class="${iconClass}"></i> ${heading}</span>
+					</div>
 					<div class="block-detail">
 						<div class="vline"></div>
-						<table id="${heading}" class="mt-3 ms-3"></table>
+						<table id="${heading}" class="mt-3 ms-3 "></table>
 					</div>
-				</div>`	
-			arr.map((item)=> {
-				document.getElementById(heading).innerHTML += `<tr>
+				</div>`;
+      arr.map((item) => {
+        document.getElementById(heading).innerHTML += `<tr class="hidden">
 					<td class="align-top py-3"><img src="icon/circle.png" width="12px" class="circle"></td>
 					<td class="date clr-2 align-top py-3"><span class="clr-3">From:</span> ${item.startDate} <br><span
 							class="clr-3">To:</span> ${item.endDate}</td>
@@ -314,7 +803,9 @@
 						<p>${item.details}</p>
 					</td>
 				</tr>`;
-			});		
-		}
-	</script>
+      });
+    }
+  </script>
+  <script src="./transition.js"></script>
+  <script src="./header.js"></script>
 </html>
