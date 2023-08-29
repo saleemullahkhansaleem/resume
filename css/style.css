@@ -94,19 +94,16 @@ p{
 }
 .hidden{
 	opacity: 0;
-	filter: blur(2px);
 	transform: translate(50px, 0);
 	transition: all 1s ease;
 }
 .hideLeft{
 	opacity: 0;
-	filter: blur(2px);
 	transform: translate(-50px, 0);
 	transition: all 1s ease;
 }
 .hide{
 	opacity: 0;
-	filter: blur(2px);
 	transform: translate(0, 100px);
 	transition: all 1s ease-in-out;
 }
@@ -703,7 +700,7 @@ flex: 0 0 calc(50% - 15px);
 	font-size: 1rem;
 	padding: 1.2rem;
 	background-color: #234;
-	filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.3));
+	filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.2));
 	border: solid 1px #345;
 	border-radius: 72px;
   }
@@ -749,6 +746,5 @@ flex: 0 0 calc(50% - 15px);
 
 .show{
     opacity: 1;
-	filter: blur(0);
 	transform: translate(0, 0);
 }
