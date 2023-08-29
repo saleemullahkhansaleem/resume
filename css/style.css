@@ -110,11 +110,6 @@ p{
 	transform: translate(0, 100px);
 	transition: all 1s ease-in-out;
 }
-.show{
-    opacity: 1;
-	filter: blur(0);
-	transform: translate(0, 0);
-}
 .home-out{
 	opacity: 0;
 	transform: translate(-10%, 10%);
@@ -319,6 +314,18 @@ header a:hover .text{
 	 width: 100%;
 	 margin-left: 0;
    }
+   .hidden{
+	opacity: 0;
+	filter: blur(2px);
+	transform: translate(0, 100px);
+	transition: all 1s ease;
+	}
+	.hideLeft{
+		opacity: 0;
+		filter: blur(2px);
+		transform: translate(0, 100px);
+		transition: all 1s ease;
+	}
   }
 
 /* contact form end */
@@ -738,3 +745,10 @@ flex: 0 0 calc(50% - 15px);
 
 
 /* Skills section end */
+
+
+.show{
+    opacity: 1;
+	filter: blur(0);
+	transform: translate(0, 0);
+}
