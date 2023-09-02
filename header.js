@@ -42,3 +42,16 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+
+function showHeader () {
+  const header = document.getElementById("header");
+  const menuBtn = document.getElementById("menu-btn");
+  if (menuBtn.classList.contains("active")) {
+    header.classList.remove("responsive");
+    menuBtn.classList.remove("active");
+  }else{
+    header.classList.add("responsive");
+    menuBtn.classList.add("active");
+  }
+}

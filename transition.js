@@ -2,8 +2,9 @@
 
 // transition('.home-out', 'home-in');
 transition('.hide', 'show');
-transition('.hideLeft', 'show');
-transition('.hidden', 'show');
+transition('.hidden-left', 'show');
+transition('.hidden-right', 'show');
+transition('.skill-progress-bar', 'skill-animation');
   function transition(oldClass, newClass) {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
