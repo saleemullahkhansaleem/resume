@@ -50,8 +50,10 @@ function showHeader () {
   if (menuBtn.classList.contains("active")) {
     header.classList.remove("responsive");
     menuBtn.classList.remove("active");
+    menuBtn.innerHTML = `<ion-icon name="menu-outline"></ion-icon>`;
   }else{
     header.classList.add("responsive");
     menuBtn.classList.add("active");
+    menuBtn.innerHTML = `<ion-icon name="close-outline"></ion-icon>`;
   }
 }
