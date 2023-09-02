@@ -195,13 +195,13 @@ header a:hover .text{
 @media (max-width: 992px){
 	.menu-btn{
 		position: fixed;
-		top: 30px;
-		right: 30px;
-		font-size: 2rem;
+		top: 20px;
+		right: 20px;
+		font-size: 1.8rem;
 		color: var(--bg5);
 		cursor: pointer;
-		width: 50px;
-		height: 50px;
+		width: 40px;
+		height: 40px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -218,12 +218,31 @@ header a:hover .text{
 		display: none;
 	}
 	header.responsive{
+		position: fixed;
+		width: 130px;
+		height: 100%;
+		top: 0;
+		right: 0;
 		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		transform: translateY(0);
+		border-radius: 0;
 	}
-	header a .text{
+	header.responsive a {
+		padding: 0.2rem 0.5rem;
+	}
+	header.responsive a .text{
 		opacity: 1;
-		transform: translateX(-60px);
+		transform: translateX(0);
 		background-color: var(--bg);
+		position: relative;
+		color: var(--clrWhite);
+		padding: 2px 7px;
+		transition: 0.3s;
+		border-radius: 0;
+		filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0));
 	}
 	header a.active .text{
 		color: var(--clr2);
