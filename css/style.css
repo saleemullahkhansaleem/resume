@@ -245,10 +245,10 @@ header a:hover .text{
 		transition: 0.3s;
 		border-radius: 0;
 		filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0));
+		background: transparent;
 	}
 	header a.active .text{
 		color: var(--clr2);
-		background: transparent;
 	}
 }
 
