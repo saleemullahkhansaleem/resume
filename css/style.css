@@ -230,7 +230,7 @@ header a:hover .text{
 		transform: translateY(0);
 		border-radius: 0;
 		background: transparent;
-		backdrop-filter: blur(30px);
+		backdrop-filter: blur(40px);
 	}
 	header.responsive a {
 		padding: 0.2rem 0.5rem;
@@ -258,6 +258,9 @@ header a:hover .text{
 
 /* Profile card start */
 
+.pro-ball{
+	display: none;
+}
 .pro-main {
 position: fixed;
 top: 50%;
@@ -267,6 +270,7 @@ border: solid 1px var(--bg1);
 border-radius: 20px;
 padding: 20px;
 text-align: center;
+z-index: 9;
 }
 .pro-pic {
 width: 240px;
@@ -349,6 +353,31 @@ transition: all 0.3s ease;
 @media (max-width: 992px){
 	.pro-main{
 		display: none;
+	}
+	.pro-main.responsive{
+		display: unset;
+		background: #22334450;
+		backdrop-filter: blur(40px);
+		
+	}
+	.pro-ball{
+		position: fixed;
+		bottom: 20px;
+		left: 20px;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		overflow: hidden;
+		background-color: var(--bg);
+		filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.4));
+		border: solid 1px var(--bg1);
+		cursor: pointer;
+		z-index: 10;
+		display: inline;
+	}
+	.pro-ball.active{
+		background-color: var(--bg1);
+		border: solid 1px var(--clr2);
 	}
 }
 

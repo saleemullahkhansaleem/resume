@@ -57,3 +57,14 @@ function showHeader () {
     menuBtn.innerHTML = `<ion-icon name="close-outline"></ion-icon>`;
   }
 }
+function showPro () {
+  const profile = document.getElementById("profile");
+  const proBtn = document.getElementById("pro-ball");
+  if (proBtn.classList.contains("active")) {
+    profile.classList.remove("responsive");
+    proBtn.classList.remove("active");
+  }else{
+    profile.classList.add("responsive");
+    proBtn.classList.add("active");
+  }
+}

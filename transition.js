@@ -26,16 +26,21 @@ transition('.skill-progress-bar', 'skill-animation');
 
 const addpoint = document.getElementById('about');
 const profile = document.getElementById('profile');
+const proBtn = document.getElementById('pro-ball');
 
 window.addEventListener('scroll', () => {
     let scrollPosition = window.scrollY + 300;
     if (scrollPosition >= addpoint.offsetTop){
         profile.classList.add('pro-show');
+        proBtn.classList.add('pro-show');
         profile.classList.remove('pro-hide');
+        proBtn.classList.remove('pro-hide');
     }
     else if (scrollPosition < addpoint.offsetTop){
         profile.classList.add('pro-hide');
+        proBtn.classList.add('pro-hide');
         profile.classList.remove('pro-show');
+        proBtn.classList.remove('pro-show');
     }
 });
 const home = document.getElementById('home');
