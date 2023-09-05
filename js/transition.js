@@ -1,6 +1,5 @@
 
 
-// transition('.home-out', 'home-in');
 transition('.hide', 'show');
 transition('.hidden-left', 'show');
 transition('.hidden-right', 'show');
