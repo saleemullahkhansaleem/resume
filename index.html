@@ -66,7 +66,7 @@
         <h1 class="main-heading home-in">
           Hi From <br /><span class="name clr-2"> Saleemullah Khan Saleem,</span
           ><br />
-          <span>A Web Developer and React.js expert!</span>
+          <span id="element"></span>
         </h1>
         <p class="slogn">
           Programming is my Love, when I start coding I don't care about a
@@ -297,7 +297,7 @@
               ><ion-icon name="grid-outline"></ion-icon> Projects</span
             >
             <div class="project full-width hide">
-              <img src="./img/project3.jpg" alt="Project 1" />
+              <img src="./img/project5.png" alt="Project 1" />
               <div class="project-details">
                 <h3>Jadeed Libas website</h3>
                 <p>An E-commerce web app.</p>
@@ -306,7 +306,7 @@
             </div>
             <div class="project-container">
               <div class="project project-parallel hidden-left">
-                <img src="./img/project2.jpg" alt="Project 2" />
+                <img src="./img/project4.png" alt="Project 2" />
                 <div class="project-details">
                   <h3>Saleem Portfolio Theme</h3>
                   <p>The theme of this website.</p>
@@ -725,6 +725,18 @@
           <p>${service.description}</p>
           <a href="#" class="my-btn">Learn More</a>
           </div>`;
+    });
+  </script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["A <i>web</i> developer.", "&amp; a React.js expert!"],
+      typeSpeed: 50,
+      backSpeed: 50,
+      backDelay: 1000,
+      loop: true,
     });
   </script>
   <script src="./transition.js"></script>

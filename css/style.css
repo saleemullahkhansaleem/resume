@@ -122,6 +122,8 @@ p{
 
 .profile{
 	border-bottom: 1px solid var(--bg1);
+	animation: upDown 3s ease-in-out infinite;
+	animation-delay: 1s;
 }
 .slogn{
 	color: var(--bg5);
@@ -134,6 +136,17 @@ p{
 }
 .social-icon:hover{
     color: var(--clrWhite);
+}
+@keyframes upDown {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-24px);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 
 /* Header navbar style strat */
