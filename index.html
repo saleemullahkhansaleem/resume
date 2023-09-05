@@ -35,19 +35,51 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <!-- colors= 
-	bg1: #344756
-	bg2: #223344
-	clr-1: #53abff
-	clr-2: #5dc9a5
-	clr-3: #d3d460
-	 --></head>
+  </head>
 
-  <body class="bg-color container text-light">
+  <body class="bg-color container clr-primary">
     <section id="home" class="row gx-5">
       <div
         class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 align-self-center"
       >
+        <div class="mode-toggle">
+          <div id="modeToggle" class="dark" onclick="toggleMode()">
+            <ion-icon name="sunny-outline"></ion-icon>
+          </div>
+          <div id="themeColors" class="theme-colors">
+            <ion-icon name="contrast-outline"></ion-icon>
+            <div
+              class="theme-clr"
+              style="--c: #0fa"
+              onclick="changeTheme('#0fa')"
+            ></div>
+            <div
+              class="theme-clr"
+              style="--c: #0af"
+              onclick="changeTheme('#0af')"
+            ></div>
+            <div
+              class="theme-clr"
+              style="--c: #f0a"
+              onclick="changeTheme('#f0a')"
+            ></div>
+            <div
+              class="theme-clr"
+              style="--c: #fa0"
+              onclick="changeTheme('#fa0')"
+            ></div>
+            <div
+              class="theme-clr"
+              style="--c: #af0"
+              onclick="changeTheme('#af0')"
+            ></div>
+            <div
+              class="theme-clr"
+              style="--c: #a0f"
+              onclick="changeTheme('#a0f')"
+            ></div>
+          </div>
+        </div>
         <img
           id="profile-img"
           src="img/profile.png"
@@ -64,7 +96,8 @@
           >
         </div>
         <h1 class="main-heading home-in">
-          Hi From <br /><span class="name clr-2"> Saleemullah Khan Saleem,</span
+          Hi From <br /><span class="name clr-theme">
+            Saleemullah Khan Saleem,</span
           ><br />
           <span id="element"></span>
         </h1>
@@ -134,7 +167,7 @@
             <img src="./img/profile.png" width="100%" class="" />
           </div>
           <div class="title">
-            <span class="pro-name clr-2">Saleem,</span> <br />
+            <span class="pro-name clr-theme">Saleem,</span> <br />
             A Web Developer
           </div>
           <div class="mail">salikhanswati@gmail.com</div>
@@ -164,7 +197,7 @@
         <!-- About section start -->
         <section id="about" class="">
           <div class="main-heading hide">
-            About <span class="clr-2">Saleem</span>
+            About <span class="clr-theme">Saleem</span>
           </div>
           <div class="mt-5">
             <span class="heading">
@@ -259,7 +292,7 @@
         <!-- Services section start -->
         <section id="services" class="">
           <div class="main-heading hide">
-            I can <span class="clr-2">Do</span>
+            I can <span class="clr-theme">Do</span>
           </div>
           <div class="mt-5">
             <span class="heading">
@@ -276,7 +309,7 @@
         <!-- Skills section start -->
         <section id="skills" class="">
           <div class="main-heading hide">
-            My <span class="clr-2">Wealth</span>
+            My <span class="clr-theme">Wealth</span>
           </div>
           <div class="mt-5">
             <span class="heading"
@@ -290,7 +323,7 @@
         <!-- Projects section start -->
         <section id="projects" class="">
           <div class="main-heading hide">
-            Some Featured <span class="clr-2">Projects</span>
+            Some Featured <span class="clr-theme">Projects</span>
           </div>
           <div class="mt-5">
             <span class="heading"
@@ -328,14 +361,14 @@
         <!-- Resume section start -->
         <section id="resume" class="">
           <div class="main-heading hide">
-            Education and <span class="clr-2">Experience</span>
+            Education and <span class="clr-theme">Experience</span>
           </div>
         </section>
         <!-- Resume section end -->
         <!-- Contact section start -->
         <section id="contact" class="">
           <div class="main-heading hide">
-            Let's talk <span class="clr-2">Together!</span>
+            Let's talk <span class="clr-theme">Together!</span>
           </div>
           <div class="mt-5">
             <span class="heading">
@@ -706,11 +739,11 @@
       arr.map((item) => {
         document.getElementById(heading).innerHTML += `<tr class="hidden-right">
 					<td class="align-top py-3"><img src="icon/circle.png" width="12px" class="circle"></td>
-					<td class="date clr-2 align-top py-3"><span class="clr-3">From:</span> ${item.startDate} <br><span
-							class="clr-3">To:</span> ${item.endDate}</td>
+					<td class="date clr-theme align-top py-3"><span class="clr-highlight">From:</span> ${item.startDate} <br><span
+							class="clr-highlight">To:</span> ${item.endDate}</td>
 					<td class="p-3">
 						<div class="field-heading">${item.title}</div>
-						<span class="clr-2">ON</span> <span class="clr-3 fw-light">${item.org}</span><br>
+						<span class="clr-theme">ON</span> <span class="clr-highlight fw-light">${item.org}</span><br>
 						<p>${item.details}</p>
 					</td>
 				</tr>`;
@@ -726,6 +759,30 @@
           <a href="#" class="my-btn">Learn More</a>
           </div>`;
     });
+
+    const root = document.querySelector(":root");
+    function toggleMode() {
+      const mode = document.getElementById("modeToggle");
+      if (mode.classList.contains("dark")) {
+        mode.innerHTML = '<ion-icon name="moon-outline"></ion-icon>';
+        mode.classList.remove("dark");
+        root.style.setProperty("--bg", "#fff");
+        root.style.setProperty("--clr-primary", "#000");
+        root.style.setProperty("--clr-border", "#ccc");
+        root.style.setProperty("--bg-blur", "#fffa");
+      } else {
+        mode.innerHTML = '<ion-icon name="sunny-outline"></ion-icon>';
+        mode.classList.add("dark");
+        root.style.setProperty("--bg", "#234");
+        root.style.setProperty("--clr-primary", "#fff");
+        root.style.setProperty("--clr-border", "#345");
+        root.style.setProperty("--bg-blur", "#234a");
+      }
+    }
+
+    function changeTheme(color) {
+      root.style.setProperty("--clr-theme", color);
+    }
   </script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
