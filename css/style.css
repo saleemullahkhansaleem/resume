@@ -487,7 +487,7 @@ flex-direction: column;
 
 /* Services section start */
 
-  .service {
+.service {
 	background-color: var(--bg);
 	border-radius: 20px;
 	filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.2));
@@ -496,12 +496,19 @@ flex-direction: column;
 	margin: 20px;
 	flex: 1;
 	min-width: 200px;
-  }
-  .service h3 {
+}
+.service h3 {
 	font-weight: var(--fw-3);
 	font-size: 1.5rem;
 	color: var(--clr-primary);
-  }
+}
+.service:nth-child(n + 7){
+	display: none;
+}
+.show-service{
+	display: block !important;
+}
+
 
 
 /* Services section end */

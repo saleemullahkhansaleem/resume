@@ -399,6 +399,20 @@ document.getElementById(
     <a href="#" class="my-btn">Learn More</a>
     </div>`;
 });
+const service = document.querySelectorAll('.service');
+const serviceBtn = document.getElementById('service-btn');
+function showServices () {
+    service.forEach((item)=>{
+        if (item.classList.contains('show-service')) {
+            item.classList.remove('show-service');
+            serviceBtn.innerHTML='Show More Services';
+        }
+        else{
+            item.classList.add('show-service');
+            serviceBtn.innerHTML='Show Less Services';
+        }
+    });
+}
 
 // Below script is for Toggle dark mode and light mode.
 
